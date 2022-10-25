@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+
+:root {
+  --primary: #ddd;
+  --dark: #333;
+  --light: #fff;
+  --shadow: 0 1px 5px rgba(104, 104, 104, 2.0);
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+}
+
+.wrapper {
+  height: 100vh;
+  background-color: grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects {
+  width: 30rem;
+  height: 30rem;
+  background-color: grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-card {
+  background-color: white;
+  height: 15rem;
+  width: 12rem;
+  border-radius: 1.5rem;
+  display: grid;
+  grid-template-rows: 1fr 3fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "header header"
+    "bild bild"
+    "github code";
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.project-card > h2 {
+  grid-area: header;
+  color: black;
+  text-align: center;
+
+}
+
+.imgContainer {
+  grid-area: bild;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid;
+  
+}
+
+.imgContainer > img {
+  width: 80%;
+  height: 80%;
+  box-shadow: var(--shadow);
+}
+
+.liveprojectContainer {
+  border-top:1px solid;
+  border-left: 1px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: code;
+}
+
+.liveprojectContainer > button{
+  height: 100%;
+  width: 100%;
+  border-style: none;
+  background-color: white;
+}
+.liveprojectContainer > button:hover{
+  height: 100%;
+  width: 100%;
+  border-style: none;
+  background-color: lightgrey;
+}
+.githubContainer > button{
+  height: 100%;
+  width: 100%;
+  border-style: none;
+  background-color: white;
+}
+.githubContainer > button:hover{
+  height: 100%;
+  width: 100%;
+  border-style: none;
+  background-color: lightgrey;
+}
+
+a{
+  color: black;
+  text-decoration: none;
+}
+
+.githubContainer{
+  border-top:1px solid;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: github;
+}
+
+.github .liveprojekt .header{
+  font-weight: 900;
+  font-family: "Poppins", sans-serif;
+}
